@@ -9,7 +9,7 @@ import java.util.Random;
  * 
  * functional goal: create a player 
  * 
- *  technical strategy: create a player class
+ *  technical strategy: create a new player in the main method of the game class
  * 
  * 
  */
@@ -19,6 +19,8 @@ public class Game {
 	public static void main(String[] args) {
 		Dealer dealer = new Dealer();
 		Card card = new Card();
+
+		Player player = new Player();
 
 		card.suit = "Hearts";
 		card.value = 2;
