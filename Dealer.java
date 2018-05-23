@@ -49,6 +49,7 @@ public class Dealer {
 	}
 
 	Card getCard() {
+
 		return getCardFromNumber(generateRandomNumber());
 	}
 }
