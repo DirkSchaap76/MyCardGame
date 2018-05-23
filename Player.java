@@ -1,5 +1,6 @@
 
 public class Player {
+	Card[] playerHand = new Card[5]; // 5 is a placeholder size. this might change in the future.
 
 	void sortHand() {
 		System.out.println("here the cards the player holds in his/her hand will be sorted");

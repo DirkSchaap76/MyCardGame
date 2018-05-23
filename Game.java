@@ -4,12 +4,11 @@ import java.util.Random;
 /*
  * next on the list: get a sorting method which gets and argument of "my Hand"
  * 
- * my thinking: who gets a hand? who does the sorting?
- * a player gets a hand and does the sorting
+ * my thinking: if sortHand is going to sort a hand, it should have an card[] as a field
  * 
- * functional goal: have the player call the sorting method
+ * functional goal: create a place to hald the players cards
  * 
- *  technical strategy: player.sortHand();
+ *  technical strategy: create a card[] field in player class
  * 
  * 
  */
