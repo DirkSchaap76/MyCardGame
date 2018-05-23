@@ -7,9 +7,9 @@ import java.util.Random;
  * my thinking: who gets a hand? who does the sorting?
  * a player gets a hand and does the sorting
  * 
- * functional goal: create a sorting method, it doesn't have to do anything yet 
+ * functional goal: have the player call the sorting method
  * 
- *  technical strategy: create a sorting method in player class
+ *  technical strategy: player.sortHand();
  * 
  * 
  */
@@ -21,6 +21,7 @@ public class Game {
 		Card card = new Card();
 
 		Player player = new Player();
+		player.sortHand();
 
 		card.suit = "Hearts";
 		card.value = 2;
