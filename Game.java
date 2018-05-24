@@ -20,7 +20,7 @@ public class Game {
 		Card card = new Card();
 
 		Player player = new Player();
-		player.sortHand();
+		// player.sortHand(); commented out, method not finished yet
 
 		card.suit = "Hearts";
 		card.value = 2;

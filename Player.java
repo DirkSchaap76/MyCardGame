@@ -1,14 +1,36 @@
 
 public class Player {
-	Card[] playerHand = new Card[5]; // 5 is a placeholder size. this might change in the future.
+	// fields
+	private String playerName;
+	Card[] myHand = new Card[5]; // 5 is a placeholder size. this might change in the future.
 
-	void sortHand() {
-		System.out.println("here the cards the player holds in his/her hand will be sorted");
-		System.out.println("it should take a \"my hand\" as an argument");
-		System.out.println("Question to self: what does a hand consit of?");
-		System.out.println("it consists of cards");
-		System.out.println("where can I put these cards?");
-		System.out.println("in an array of cards.");
-		System.out.println("who provides these cards? The dealer.");
+	// Getters and setters.
+	public String getPlayerName() {
+		return playerName;
+	}
+
+	public void setPlayerName(String playerName) {
+		this.playerName = playerName;
+	}
+
+	// methods
+	Card[] sortHand(Card[] myHandIn) {
+		this.myHand = myHandIn;
+
+		for (Card c : myHandIn) {
+			boolean notSorted = true;
+			while (notSorted) {
+
+				// first statement is immediately false(?)
+				/*
+				 * toDo: compare current card with next card if currentCard < nextCard: flip
+				 * when flipped: notSorted = true for/while should now start again
+				 * 
+				 */
+			}
+
+		}
+
+		return myHandIn;
 	}
 }
